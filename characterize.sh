@@ -39,21 +39,21 @@ done
 # Paso 1: Captura o selección de imagen
 if [ -n "$IMAGE_ARG" ]; then
     echo -e "\n[Paso 1/3] Procesando imagen provista: $IMAGE_ARG..."
-    "$PYTHON_BIN" "$SCRIPT_DIR/scripts/capture_photo.py" --image "$IMAGE_ARG"
-elif [ "$USE_WEBCAM" = true ] || [ ! -f "$SCRIPT_DIR/character_data/photo.jpg" ]; then
+    "$PYTHON_BIN" "$SCRIPT_DIR/scripts/archive_robotics/capture_photo.py" --image "$IMAGE_ARG"
+elif [ "$USE_WEBCAM" = true ] || [ ! -f "$SCRIPT_DIR/character_data/renders/biometrics/photo.jpg" ]; then
     echo -e "\n[Paso 1/3] Abriendo cámara web para captura de foto..."
-    "$PYTHON_BIN" "$SCRIPT_DIR/scripts/capture_photo.py"
+    "$PYTHON_BIN" "$SCRIPT_DIR/scripts/archive_robotics/capture_photo.py"
 else
-    echo -e "\n[Paso 1/3] Utilizando foto existente en character_data/photo.jpg..."
+    echo -e "\n[Paso 1/3] Utilizando foto existente en character_data/renders/biometrics/photo.jpg..."
 fi
 
 # Paso 2: Extracción de malla 3D y landmarks con MediaPipe
 echo -e "\n[Paso 2/3] Extrayendo 468 landmarks faciales 3D y generando malla OBJ..."
-"$PYTHON_BIN" "$SCRIPT_DIR/scripts/face_mesh_extractor.py" --image "$SCRIPT_DIR/character_data/photo.jpg"
+"$PYTHON_BIN" "$SCRIPT_DIR/scripts/archive_robotics/face_mesh_extractor.py" --image "$SCRIPT_DIR/character_data/renders/biometrics/photo.jpg" --output "$SCRIPT_DIR/character_data/meshes"
 
 # Paso 3: Construcción del personaje robótico en Blender
 echo -e "\n[Paso 3/3] Construyendo personaje robótico articulado en Blender..."
-/usr/local/bin/blender -b -P "$SCRIPT_DIR/scripts/build_robot_character.py"
+/usr/local/bin/blender -b -P "$SCRIPT_DIR/scripts/archive_robotics/build_robot_character.py"
 
 echo -e "\n=========================================================="
 echo "   [✓] Caracterización Completada Exitosamente!           "

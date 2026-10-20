@@ -1,0 +1,60 @@
+{
+  "user_height_m": 1.8,
+  "proportions": {
+    "head": {
+      "height": 0.1386,
+      "width": 0.0998,
+      "depth": 0.1275,
+      "z_center": 1.7307
+    },
+    "neck": {
+      "length": 0.1383,
+      "radius": 0.065,
+      "z_center": 1.5923
+    },
+    "torso": {
+      "chest_width": 0.3898,
+      "chest_depth": 0.2569,
+      "chest_height": 0.3455,
+      "waist_width": 0.202,
+      "waist_depth": 0.1731,
+      "waist_height": 0.2827,
+      "hip_width": 0.2404,
+      "hip_depth": 0.1818,
+      "hip_height": 0.2,
+      "total_torso_length": 0.6282,
+      "shoulder_width": 0.443,
+      "shoulder_y_offset": 0.0,
+      "chest_z_center": 1.3472,
+      "waist_z_center": 1.0834,
+      "pelvis_z_center": 0.7949
+    },
+    "arms": {
+      "upper_arm_length": 0.2984,
+      "upper_arm_radius": 0.058,
+      "forearm_length": 0.2991,
+      "forearm_radius": 0.048,
+      "hand_length": 0.0903,
+      "hand_width": 0.095,
+      "hand_thickness": 0.038,
+      "arm_span": 1.7741
+    },
+    "legs": {
+      "thigh_length": 0.3572,
+      "thigh_radius": 0.092,
+      "shin_length": 0.3627,
+      "shin_radius": 0.068,
+      "foot_length": 0.1622,
+      "foot_width": 0.105,
+      "foot_height": 0.075,
+      "leg_total_length": 0.7949
+    },
+    "face": {
+      "interpupillary_distance_m": 0.075,
+      "face_height_m": 0.1883,
+      "face_width_m": 0.1684,
+      "jaw_width_m": 0.1314,
+      "nose_projection_m": 0.024
+    }
+  }
+}

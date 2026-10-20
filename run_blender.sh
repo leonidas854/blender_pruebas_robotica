@@ -4,7 +4,7 @@
 
 set -e
 
-BLENDER_BIN="/usr/local/bin/blender"
+BLENDER_BIN="/opt/blender-lts/blender"
 
 if [ ! -x "$BLENDER_BIN" ]; then
     BLENDER_BIN=$(which blender 2>/dev/null || true)
