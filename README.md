@@ -1,80 +1,33 @@
-# Blender & Robotics: Pipeline de Caracterización 3D con IA
+# Viajero entre Épocas
 
-Pipeline integral para captura fotográfica/webcam, extracción de malla facial 3D antropométrica con MediaPipe (468 landmarks), generación de modelos robóticos humanoides articulados en Blender 3.6 LTS y control bidireccional mediante Model Context Protocol (MCP). Optimizado para aceleración por GPU NVIDIA (Cycles con OptiX).
+Personaje humano estilizado, vestido por capas y editable en Blender. Versión de presentación y base para seguir refinando parecido y animación.
 
-## 🚀 Características
+**Abrir:** `blender blender/personaje_final.blend`
 
-- **Captura Flexible:** Obtención de fotos desde cámara web en tiempo real con guías biométricas o procesamiento de archivos JPG/PNG existentes (`scripts/capture_photo.py`).
-- **Extracción de Malla Facial 3D e IA:** Estimación de 468 landmarks 3D con MediaPipe FaceLandmarker, métricas antropométricas (anchos de mandíbula, pómulos, ojos, altura de frente) y generación de archivo OBJ texturizable (`scripts/face_mesh_extractor.py`).
-- **Generación Procedural en Blender:** Creación automatizada del chasis robótico, articulaciones metálicas, torso estilizado, montaje de la máscara facial y materiales PBR (plásticos duros, metales y emisores LED) (`scripts/build_robot_character.py`).
-- **Integración MCP (Model Context Protocol):** Conexión con agentes de IA (Antigravity) para inspección de escena, renderizado y manipulación en tiempo real (`scripts/test_blender_mcp.py`).
-- **Aceleración Hardware:** Script lanzador configurado para GPU NVIDIA GeForce RTX con backend OptiX en Arch Linux (`run_blender.sh`).
+- `GUIA_BLENDER.md`: edición, poses, materiales y comandos.
+- `ESTADO.md`: resultados y límites reales.
+- `renders/final/`: imágenes de presentación.
+- `renders/turnaround/`: vistas ortográficas.
+- `renders/poses/`: pruebas del rig.
+- `assets/materiales/viajero_materiales.blend`: biblioteca nativa.
+- `exports/glb/viajero.glb` y `exports/fbx/viajero.fbx`: intercambio.
+- `docs/entrega_examen.md`: relación con la rúbrica y storytelling.
+- `docs/pendientes.md`: refinamientos pendientes.
+- `.agents/skills/`: skills para continuar.
 
-## 📁 Estructura del Proyecto
+## Reproducir
 
-```text
-├── .agents/
-│   └── skills/blender-robotics/ # Skill de Antigravity para automatizar el pipeline
-├── character_data/              # Datos generados, métricas y renders
-│   ├── blends/
-│   │   ├── human/               # Modelo activo: leonidas_human_180.blend
-│   │   └── robot_archive/       # Modelos robóticos anteriores archivados
-│   ├── meshes/
-│   │   └── face_mesh.obj        # Malla 3D facial generada con MediaPipe
-│   ├── metrics/
-│   │   ├── body_metrics_real.json   # Biometría corporal completa (altura 1.80m)
-│   │   └── character_profile.json   # Perfil antropométrico
-│   └── renders/
-│       ├── human/               # Renders del modelo humano (frontal, 3/4, comparativo)
-│       ├── biometrics/          # Fotos y esquemas debug de MediaPipe
-│       └── robot_archive/       # Renders de fases robóticas anteriores
-├── fotos_mias/                  # Fotografías de referencia del usuario (Leonidas)
-├── models/                      # Modelos neuronales (pose_landmarker, face_landmarker)
-├── pdfs/                        # Documentación narrativa y de personajes en PDF
-├── references/                  # Imágenes de referencia anatómica y modelado 3D
-├── scripts/
-│   ├── build_human_model.py     # Script maestro generador del modelo humano
-│   ├── extract_body_metrics.py  # Extracción biométrica con MediaPipe & OpenCV
-│   ├── human_modeling/          # Paquete modular de modelado poligonal continuo
-│   │   ├── face_head.py         # Cabeza, mandíbula, rasgos faciales y cuello
-│   │   ├── hands_feet.py        # Manos y pies con 5 dedos articulados
-│   │   ├── mesh_builder.py      # Fusión orgánica y remallado poligonal
-│   │   ├── metrics.py           # Calibración biométrica a 1.80m
-│   │   ├── musculature.py       # Pectorales, abdomen, dorsales, deltoides y piernas
-│   │   ├── skeleton_core.py     # Núcleo continuo estanco en Pose A
-│   │   └── studio_render.py     # Ciclorama, iluminación de 3 puntos y cámaras
-│   └── archive_robotics/        # Scripts históricos de la fase robótica previa
-├── characterize.sh              # Script histórico de pipeline robótico
-├── install_blender_robotics.sh  # Instalador de dependencias y modelos
-└── run_blender.sh               # Lanzador de Blender con GPU NVIDIA RTX 4070 (OptiX)
-```
+Entorno comprobado: Blender 5.2.2 LTS, Linux, NVIDIA RTX 3070, Cycles/OptiX. Los scripts de modelado usan el Python incluido en Blender.
 
-## 🛠️ Instalación y Requisitos
-
-1. **Requisitos del sistema:**
-   - Linux (Arch Linux probado con NVIDIA GeForce RTX 4070)
-   - Blender 5.2 LTS (en `/opt/blender-lts/blender`)
-   - Python 3.11 con OpenCV y MediaPipe
-
-2. **Instalación:**
-   ```bash
-   chmod +x install_blender_robotics.sh characterize.sh run_blender.sh
-   ./install_blender_robotics.sh
-   ```
-
-## 🎯 Uso del Pipeline
-
-### 1. Extracción de Biometría Real (1.80m)
 ```bash
-python3 scripts/extract_body_metrics.py
+blender -b --python-exit-code 1 -P scripts/build_viajero.py -- --preview
+blender -b --python-exit-code 1 -P scripts/render_viajero.py
+blender -b --python-exit-code 1 -P scripts/validate_viajero.py
+python scripts/package_viajero.py
 ```
 
-### 2. Generar el Modelo Poligonal Humano y Renders
-```bash
-blender -b -P scripts/build_human_model.py
-```
+Los generadores conservan 01–03 y respaldan etapas generadas antes de reconstruir. Guarda las ediciones manuales en otro `.blend`. El empaquetador requiere Pillow y ReportLab, disponibles en este entorno.
 
-### 3. Abrir la escena en Blender interactivo con GPU OptiX
-```bash
-./run_blender.sh character_data/blends/human/leonidas_human_180.blend
-```
+Los materiales procedurales completos se conservan en Blender. GLB/FBX no garantizan el mismo aspecto sin hornear texturas. El rig es FK y las acciones son poses de prueba, no ciclos animados terminados.
+
+El trabajo robótico anterior sigue en `scripts/archive_robotics/` y `character_data/blends/robot_archive/`. Su documentación original se conserva en `docs/README_pipeline_anterior.md`; no es el flujo de este personaje.

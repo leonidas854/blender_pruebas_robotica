@@ -1,0 +1,1221 @@
+{
+  "lights": [
+    {
+      "name": "Fill — fria",
+      "position": [
+        2.5,
+        -1.7999999523162842,
+        2.200000047683716
+      ],
+      "power_w": 240.0,
+      "size_m": 2.200000047683716,
+      "color": [
+        0.6299999952316284,
+        0.7699999809265137,
+        1.0
+      ]
+    },
+    {
+      "name": "Key — calida",
+      "position": [
+        -2.299999952316284,
+        -3.200000047683716,
+        3.5999999046325684
+      ],
+      "power_w": 450.0,
+      "size_m": 2.5,
+      "color": [
+        1.0,
+        0.800000011920929,
+        0.6399999856948853
+      ]
+    },
+    {
+      "name": "Rim — contorno",
+      "position": [
+        0.6000000238418579,
+        1.600000023841858,
+        2.799999952316284
+      ],
+      "power_w": 600.0,
+      "size_m": 1.600000023841858,
+      "color": [
+        1.0,
+        0.7799999713897705,
+        0.5099999904632568
+      ]
+    }
+  ],
+  "materials": {
+    "Abrigo": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Bordado": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Bronce": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Bufanda": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Cabello": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Camisa": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Chaleco": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Cuero": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Cuero_borde": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Estudio_tinta": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Forro": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Guantes": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Iris": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Labios": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Laton": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Mat_Clay_CuerpoBase": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Mechon_luz": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Ojo": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Pantalon": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "Piedra": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Piel": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Pupila": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Suela": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    "Vidrio": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    }
+  },
+  "camera_types": {
+    "CAM_Abrigo": "ORTHO",
+    "CAM_Bolso": "ORTHO",
+    "CAM_Botas": "ORTHO",
+    "CAM_Cabello": "ORTHO",
+    "CAM_Cinturones": "ORTHO",
+    "CAM_Espalda": "ORTHO",
+    "CAM_Estudio": "ORTHO",
+    "CAM_Frente": "ORTHO",
+    "CAM_Hero": "PERSP",
+    "CAM_Perfil": "ORTHO",
+    "CAM_Perfil_derecho": "ORTHO",
+    "CAM_Rostro": "ORTHO",
+    "CAM_Rostro_frontal": "ORTHO",
+    "CAM_Rostro_perfil": "ORTHO",
+    "CAM_Talisman": "ORTHO",
+    "CAM_Tres_cuartos": "ORTHO"
+  }
+}
