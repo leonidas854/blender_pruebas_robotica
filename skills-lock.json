@@ -1,0 +1,271 @@
+{
+  "version": 2,
+  "skills": {
+    "atlas-uv-fitting": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/atlas-uv-fitting/SKILL.md",
+      "computedHash": "6a445cac54bc43ca61ab2f9c326380682b1f0103f7a7ab41fa7d516ff6fc4781"
+    },
+    "blender-addon-development": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-addon-development/SKILL.md",
+      "computedHash": "2ca5f1ffe2a358d90cc8c9c03c2167fdc33d015c72b3a537a93b46bff628c671"
+    },
+    "blender-animation": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-animation/SKILL.md",
+      "computedHash": "ae6d12aeee23e69e51cc9a5395dc5a514dde5c79b2809ff52e97916b0b800228"
+    },
+    "blender-asset-qa": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-asset-qa/SKILL.md",
+      "computedHash": "b6db7b6fb6d2256f7ddb7307712af7880c9ef2f4b209f096eff54133b8fbe928"
+    },
+    "blender-cameras": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/blender-cameras/SKILL.md",
+      "computedHash": "2ab59deed827579d045e16a42b0b49bf49712f0f0aa442bcc3366277a5dc868a"
+    },
+    "blender-character-rigging": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-character-rigging/SKILL.md",
+      "computedHash": "b74f009910caaf4ec1178ab93b6c19d5fa0d2ab7eaaecf8ffc41bb62fd5d8a48"
+    },
+    "blender-clothing": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-clothing/SKILL.md",
+      "computedHash": "65c6cf87b49bb41925c7410964f858c5e0729d20721a497542cd52450ab21504"
+    },
+    "blender-core": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-core/SKILL.md",
+      "computedHash": "edf8f6757070df97c95bbb2168c35634b4d2145024481977885ab786abfea9bd"
+    },
+    "blender-environment-kits": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-environment-kits/SKILL.md",
+      "computedHash": "4cfe794777d0c79651ae90d19d5bcb835aeeda0b747ab416552baf24718f9386"
+    },
+    "blender-export-pipelines": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-export-pipelines/SKILL.md",
+      "computedHash": "064c5ebe23b4ef40c6ed5bfcb2efa40d3d523bb7068ad59c300da59bf2eecd14"
+    },
+    "blender-facial-shapekeys": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-facial-shapekeys/SKILL.md",
+      "computedHash": "4a2e919124baff650601aa038334d6a5ea0af9ef0a2cef65f6c00cf5d4f9d355"
+    },
+    "blender-game-optimization": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-game-optimization/SKILL.md",
+      "computedHash": "1dd5ed37d2b53eb05428817e7d44fad60fb5f139a7190efa0fce97e04b117654"
+    },
+    "blender-geometry-nodes": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-geometry-nodes/SKILL.md",
+      "computedHash": "4cb6550bd9fbafea3e01b620f2e5c4508373885b80354c62b841e14e8ce07bb0"
+    },
+    "blender-hair-grooming": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-hair-grooming/SKILL.md",
+      "computedHash": "741b0ec04ec1b6e487d5f398dab81be35415a43f6987fef9a9ef7e1fe8f17e6b"
+    },
+    "blender-hardsurface-modeling": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-hardsurface-modeling/SKILL.md",
+      "computedHash": "0a06c1718447d122b543334e908ed3a4744b3132feac37323bea92e92ad09b17"
+    },
+    "blender-lighting-lookdev": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-lighting-lookdev/SKILL.md",
+      "computedHash": "f9a03b9bb98e28e2ef19a07918d4af7707f037ce44f30945da916c25667d3df8"
+    },
+    "blender-pbr-materials": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-pbr-materials/SKILL.md",
+      "computedHash": "f804f0c120eb17790c7c981af17d204c923d59cf07002651fc1c0f4dcb256bbd"
+    },
+    "blender-pipeline-automation": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-pipeline-automation/SKILL.md",
+      "computedHash": "1f951958b1bed162898a549525cd2aab347a4c0e96088388be8da0f950725fa5"
+    },
+    "blender-rendering": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-rendering/SKILL.md",
+      "computedHash": "64d155a6855fb3f541482e6c83da80f5e126e999a96cb8627bda28009f207d55"
+    },
+    "blender-retopology-uv": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-retopology-uv/SKILL.md",
+      "computedHash": "f4df40fa71e12a72e05dbddd7e83e696ef2eaa001bc5ef4f8d112c8b9cda93cf"
+    },
+    "blender-scene-setup": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-scene-setup/SKILL.md",
+      "computedHash": "f0acc574b24078d6226241f65039e66825cc74f92db6b4968d9782710e134842"
+    },
+    "blender-sculpting": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-sculpting/SKILL.md",
+      "computedHash": "58b90c9ba7c81358cb7609d33352b04c98c65272dfe5601cfc6ca403f2d93381"
+    },
+    "blender-simulation": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-simulation/SKILL.md",
+      "computedHash": "959d1802bf9088ef4630e226722ffab0de19bdbbb507a7332a019b8d281a636b"
+    },
+    "blender-stylized-npr": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-stylized-npr/SKILL.md",
+      "computedHash": "45ee626165b10bf85b3cb4f835eb628138a182a192b7bc46d25ca7be0537d453"
+    },
+    "blender-texture-baking": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-texture-baking/SKILL.md",
+      "computedHash": "be0e3e81f4d385431758f3e8ede3dac2e5ba22483643505c197ab61fedaaf47b"
+    },
+    "blender-texturing": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-texturing/SKILL.md",
+      "computedHash": "a9745844ff4d1c080c79d72578d2bad15382e8056e6eb5890caf95a0533abee2"
+    },
+    "blender-time-of-day": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-time-of-day/SKILL.md",
+      "computedHash": "de99ac1e3117dfe79807a07f9af34316df85c8c536ba152dc4baebffc743d1eb"
+    },
+    "blender-video-editing": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-video-editing/SKILL.md",
+      "computedHash": "6c16bca3e2aa84a15904ae461830b9e9062503af6bae91eefdfc645501e3cc42"
+    },
+    "blender-weather-fx": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-weather-fx/SKILL.md",
+      "computedHash": "b1860d95811813b1ae4ee21160040043bb762b3f619ac563a4fab8c83d8f6eb3"
+    },
+    "blender-workflow-recipes": {
+      "source": "EL4CTEO/blender-skills",
+      "commit": "9e7e04a603c125a0d17447ab97112fa70a865067",
+      "sourceType": "github",
+      "skillPath": "skills/blender-workflow-recipes/SKILL.md",
+      "computedHash": "ddc4f1e2a5bae3bed86c2142d99a290515469542c690700a6f37b81c15243671"
+    },
+    "contour-to-mesh": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/contour-to-mesh/SKILL.md",
+      "computedHash": "8ff6509b824efbc87e9bc3a2944a584fd39c85b9597f5ac862978f6071f115a8"
+    },
+    "orthographic-registration": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/orthographic-registration/SKILL.md",
+      "computedHash": "346ef954c6db54f0b1fef1a8175818624eccabdc1cad414ef05d9b39dceb8ca8"
+    },
+    "quality-refinement-autoloop": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/quality-refinement-autoloop/SKILL.md",
+      "computedHash": "79cb5658cfea31dd4367b97114105cffeafe0e2021d6bdd2f5cbde934913378e"
+    },
+    "reference-analysis-validator": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/reference-analysis-validator/SKILL.md",
+      "computedHash": "6c74388891694d0d253cde5336eb85cf47e440813d93175993d8acfd28e6a9a8"
+    },
+    "reference-look-calibration": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/reference-look-calibration/SKILL.md",
+      "computedHash": "11a40005075cce2c9b20da8d5e2872cd839fffbc006029c0821bd24ab983e87e"
+    },
+    "reference-to-3d": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/reference-to-3d/SKILL.md",
+      "computedHash": "551dd35c4565982ad3044bb48ed244f5c5a30aaf9cdbc9daa1d984d9bbbef410"
+    },
+    "text-to-blender": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/text-to-blender/SKILL.md",
+      "computedHash": "711ddcb1f3b804f321e022712b1b2962e3b68f701f986046901c5a8deb5ddf31"
+    },
+    "wireframe-to-3d": {
+      "source": "RobLe3/cc-blender-skill",
+      "commit": "a2634b588e80265e796aa53f8ab178d75105c2af",
+      "sourceType": "github",
+      "skillPath": "plugin/skills/wireframe-to-3d/SKILL.md",
+      "computedHash": "040c461695097700543e7383688e0797b81a85682c3ad1698cd97a9b97a300ee"
+    }
+  }
+}
