@@ -95,3 +95,121 @@ Exception: {"exception_type": "RuntimeError", "message": "Error: DeformGroup 'TE
 25:41.654  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/perfil.png'
 25:58.318  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/espalda.png'
 26:17.123  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/tres_cuartos.png'
+27:00.427  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/presentacion.png'
+27:14.561  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/rostro_frente.png'
+27:27.196  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/rostro_perfil.png'
+27:43.204  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/prueba_codos_rodilla.png'
+27:58.130  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/anatomia_continua.png'
+28:13.921  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/anatomia_flexion.png'
+28:18.585  blend            | Saved session recovery to "/tmp/quit.blend"
+28:18.599  blend            | Writing user preferences: "/home/leonidas/.config/blender/5.2/config/userpref.blend" 
+28:18.602  reports          | Preferences saved
+Server thread started
+BlenderMCP server started on localhost:9876
+Connected to client: ('127.0.0.1', 56384)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 52136)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Error in handler: {"exception_type": "AttributeError", "message": "'Context' object has no attribute 'object'", "traceback": "Traceback (most recent call last):\n  File \"/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py\", line 2294, in execute_code\n    exec(code, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 1, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/build_viajero_v2.py\", line 42, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/build_viajero_v2.py\", line 21, in main\n    body=anatomy.build(rig)\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/viajero_v2/anatomy.py\", line 69, in build\n    parts.append(g.sphere('Volumen_oreja',(sign*.089,.008,1.655),(.013,.019,.030),mat))\n                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/viajero_lib.py\", line 125, in sphere\n    o=register(bpy.context.object,name,mat,bone)\n               ^^^^^^^^^^^^^^^^^^\nAttributeError: 'Context' object has no attribute 'object'\n"}
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 50178)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 53360)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 49024)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 43836)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 58204)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 38072)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 40994)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 34792)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 52242)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Error in handler: {"exception_type": "RuntimeError", "message": "Error: DeformGroup 'TEMP_Relajacion' not in object 'Anatomia_Esculpida'\n", "traceback": "Traceback (most recent call last):\n  File \"/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py\", line 2294, in execute_code\n    exec(code, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 1, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py\", line 33, in main\n    body.vertex_groups.remove(group)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\nRuntimeError: Error: DeformGroup 'TEMP_Relajacion' not in object 'Anatomia_Esculpida'\n\n"}
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 56912)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 59238)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 36100)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+Connected to client: ('127.0.0.1', 44816)
+Client handler started
+Queued command: execute_code
+Executing handler for execute_code
+Handler execution complete
+Client disconnected
+Client handler stopped
+
+Blender quit

@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-22",
+  "scope": "personaje, rig FK, renders",
+  "files": [
+    {
+      "path": "blender/personaje_final.blend",
+      "bytes": 40368288,
+      "sha256": "b4cb96f1bfe54a57e11ecdcbfa0d580f639bf78fb5e0aed24f254e79da9ce532"
+    },
+    {
+      "path": "blender/v2/viajero_esculpido.blend",
+      "bytes": 142493043,
+      "sha256": "be1daf1427750a93f234015d8857ccfe70c61e315cd2b1a9257dde994169a616"
+    },
+    {
+      "path": "docs/v2/GUIA_ENTREGA.md",
+      "bytes": 4524,
+      "sha256": "a9504d897e60c6986ba67378d597f5c1e0b1ba9dc22782dc599428d8fe2e6ee9"
+    },
+    {
+      "path": "docs/v2/bitacora.md",
+      "bytes": 3321,
+      "sha256": "ad1b0a77782a4918929f97c98e34c74baf6049925a1ec4d469a028fe1572b98f"
+    },
+    {
+      "path": "docs/v2/escena.json",
+      "bytes": 938,
+      "sha256": "b8adc743ba868984e329433776530d7bfa3c5b354bad499e36fa3366eda25bbd"
+    },
+    {
+      "path": "docs/v2/mejora_continua.md",
+      "bytes": 1661,
+      "sha256": "f2b3fdd08c97c6754625d5f5038ac9db8cb8c00b1cd1456e798ea006065c570a"
+    },
+    {
+      "path": "docs/v2/prompt_log.md",
+      "bytes": 1488,
+      "sha256": "3c603af505fe1ddcb3b14161ef043b788aefb2099286ebdb894f4b61355af429"
+    },
+    {
+      "path": "docs/v2/spec.md",
+      "bytes": 2501,
+      "sha256": "780288716b5ab4ae04a8341b8cb91b34ae7193be403ac9aa4a32fdaff0c8adc6"
+    },
+    {
+      "path": "docs/v2/validacion.json",
+      "bytes": 1324,
+      "sha256": "e83f41762f168e9037a105464439e7535bab17a02172feb18e2286a65f31b499"
+    },
+    {
+      "path": "documentacion/13 Captura_de_Movimiento_y_Gemelos_Digitales.pdf",
+      "bytes": 22060905,
+      "sha256": "369f8a2f3c62fe4fa65b1e0981face7c34a5bf5f377b13cd56b90ec627c05589"
+    },
+    {
+      "path": "documentacion/5 practica-captura-movimiento-retargeting-ros2.pdf",
+      "bytes": 261283,
+      "sha256": "14f1c7487ce204c64b6266a16056becf00ffbefa84484c8f3d6867d34b0d87c0"
+    },
+    {
+      "path": "documentacion/rubrica-evaluacion-mocap-retargeting.pdf",
+      "bytes": 330076,
+      "sha256": "8ce8d9beb0ba2b2f0257bec4283ec5956eb3adc28c4727c8782cc072678a7ef5"
+    },
+    {
+      "path": "entrega/v2/Viajero_v2_Informe_y_Evidencias.pdf",
+      "bytes": 27299184,
+      "sha256": "12d327ad9a8ab7514d7b22cece0490337d325b55308e92831dbbb7d568b04636"
+    },
+    {
+      "path": "referencias/cuerpo_base/02_cuerpo_base_referencia.png",
+      "bytes": 2299888,
+      "sha256": "0282ef605a519f260a14468be73f863cb75bcef7b2d015b0e4e6a151a66a178b"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_01_chaqueta_abrigo.png",
+      "bytes": 2706547,
+      "sha256": "d36da5c3471332d3d45d077b84212404c715c18dd238c39675241ec1043180b9"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_02_camisa_chaleco.png",
+      "bytes": 2647928,
+      "sha256": "61f2626ac0aae8ce9f93bfbc5001b5e641fbf88d0faea90a50a30a7f9ce5b029"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_03_pantalon_piezas_inferiores.png",
+      "bytes": 2623140,
+      "sha256": "ba1e1dbb06ffa439470b656b6ea7c14d8f083afb2eae7204a2e65845846421d4"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_04_bufanda_guantes_telas.png",
+      "bytes": 2711486,
+      "sha256": "d320a02516033cb02c5c68378fd01ab5920890d0e07487a998f871f0a0b3cb2d"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_05_botas_del_viajero.png",
+      "bytes": 2618977,
+      "sha256": "1a3d71877fcad3ff66473c238f84ae663c5591c5bfc9f8aa7781a76419276807"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_06_cinturones_bolso_correas.png",
+      "bytes": 2646355,
+      "sha256": "18fca3305a7bdb79fcefcb9b970bed449e59a0f340fdd7b5695cd281deb15673"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_07_talisman_gafas_accesorios.png",
+      "bytes": 2673596,
+      "sha256": "275ce16798fc4f5610df465819310456772cf2477d34c15ca6f76efd00d12d94"
+    },
+    {
+      "path": "referencias/fichas_detalladas/ficha_08_caracterizacion_ensamblaje_final.png",
+      "bytes": 2693599,
+      "sha256": "4cba98d5204e2f89c3d2f7d5387350d1288238951ca2a45bb8fb3df92bc62d9a"
+    },
+    {
+      "path": "referencias/fotografias_originales/foto_01_cuerpo_tpose.jpeg",
+      "bytes": 737708,
+      "sha256": "6b325b7fa4daace35d04204d934ccfcf52916d403d64214770aba711d494207f"
+    },
+    {
+      "path": "referencias/fotografias_originales/foto_02_frontal_rostro.jpeg",
+      "bytes": 694808,
+      "sha256": "6973724ca023f5fdb0bce05e8ff0432a5463f2aad2410459c319b284f75b369e"
+    },
+    {
+      "path": "referencias/fotografias_originales/foto_03_lateral_perfil.jpeg",
+      "bytes": 652300,
+      "sha256": "7bbc341f881b1b57c874114ac6791d142d5f360e16aca37721d059aff5b74446"
+    },
+    {
+      "path": "referencias/fotografias_originales/foto_04_pose_adicional.jpeg",
+      "bytes": 631173,
+      "sha256": "1ea6796afef0671aea0ce549dedcce7652205c2f89d0d28e46905ba5fb7673fb"
+    },
+    {
+      "path": "referencias/fotografias_originales/foto_05_cuerpo_completo.jpeg",
+      "bytes": 727677,
+      "sha256": "278347656e0cdca8d612f4e368383d9adaf508e0b7daf30748d0de12fe6274aa"
+    },
+    {
+      "path": "referencias/personaje_aprobado/01_concepto_viajero_entre_epocas.png",
+      "bytes": 2608712,
+      "sha256": "b67f4051f02b64b9bddea99955b1f63b1bc8fac5a4f46b989a8b52aaa13606bb"
+    },
+    {
+      "path": "referencias/rubrica_fases_examen.jpeg",
+      "bytes": 222091,
+      "sha256": "58f966f5f08e328936a4eb5893e354adcc311f3dc5fa6e5ea3e6653aab273f7c"
+    },
+    {
+      "path": "referencias/vestimenta_general/03_ropa_e_indumentaria.png",
+      "bytes": 2623366,
+      "sha256": "0eafca17f545576b666b98c80d7f24ebe47971da419ef22f446622bb3a9af84a"
+    },
+    {
+      "path": "renders/final/viajero_presentacion.png",
+      "bytes": 4823790,
+      "sha256": "4b9015dfb93561046ba3b9ebeb4be9b2817d6c8b417535295f332a67851eed22"
+    },
+    {
+      "path": "renders/v2/anatomia_continua.png",
+      "bytes": 1565775,
+      "sha256": "d250c7862e72f252da5706e37aaf95cbefe68ea4747a4dc650fdba79fe432713"
+    },
+    {
+      "path": "renders/v2/anatomia_flexion.png",
+      "bytes": 1569011,
+      "sha256": "7366f2253a62eae136b24e105f871725f220f255ca1e75013910268475fdad00"
+    },
+    {
+      "path": "renders/v2/espalda.png",
+      "bytes": 1744600,
+      "sha256": "11bbc66fe430cc93a8f43d2e379e0c50e32e995d8b43f1da1d62203eaa0ff52c"
+    },
+    {
+      "path": "renders/v2/frente.png",
+      "bytes": 1815028,
+      "sha256": "e08c2066a9616f5b3d43f60aee1234f60b0b2a6723b0a21b1e23d29f61986934"
+    },
+    {
+      "path": "renders/v2/iteracion_01_cuerpo.png",
+      "bytes": 743166,
+      "sha256": "3a8b0fd4a41665af03d95a02e85fa940af10fc0b70029ad4bdfdaf35790f93a8"
+    },
+    {
+      "path": "renders/v2/iteracion_01_rostro.png",
+      "bytes": 516236,
+      "sha256": "1fe618f9866ed9f3ededd23a7328cb6633de757e09694b4b86c76705b068ac85"
+    },
+    {
+      "path": "renders/v2/iteracion_02_cuerpo.png",
+      "bytes": 733929,
+      "sha256": "1e2745b28914bdbdacb7cfefc69b71fe44db0fef586e726ad1fec050bb3c85a7"
+    },
+    {
+      "path": "renders/v2/iteracion_02_rostro.png",
+      "bytes": 513627,
+      "sha256": "fe99b4670ef52cf41f3e959bff45497784c6696fb7193579b6aea792c7c9d46f"
+    },
+    {
+      "path": "renders/v2/iteracion_03_cuerpo.png",
+      "bytes": 734409,
+      "sha256": "bf4311c575ce5fe83f45ae4947273a82dc45e817adc53b8428869b7f02eee42a"
+    },
+    {
+      "path": "renders/v2/iteracion_03_rostro.png",
+      "bytes": 657162,
+      "sha256": "16518ea260588a1432c832dad54e8810b2202e506e13e761ccfe9ebdd8a72463"
+    },
+    {
+      "path": "renders/v2/perfil.png",
+      "bytes": 1704092,
+      "sha256": "195ca91011e9879f6a6e39261b334f824b437316125fee722f524086ef177e0a"
+    },
+    {
+      "path": "renders/v2/presentacion.png",
+      "bytes": 3820212,
+      "sha256": "50935b0e938cc3b626405660a79f2e9ec1ff0739b61304816d735282db1e3981"
+    },
+    {
+      "path": "renders/v2/prueba_codos_rodilla.png",
+      "bytes": 1786156,
+      "sha256": "c1d4c555461b36f106729c8aa5d69904b6d9f8d62fe3a19ba3e62d389756f9f8"
+    },
+    {
+      "path": "renders/v2/revision_04_espalda.png",
+      "bytes": 711155,
+      "sha256": "00a3b7dc0bab345c31d6970c92a91e60d93a2c6ebd2b6e782b5250523872324d"
+    },
+    {
+      "path": "renders/v2/revision_04_flexion.png",
+      "bytes": 739863,
+      "sha256": "aee14ad877807c391ee1d39f6f42ce5641e262c8b28e573694614524819c7951"
+    },
+    {
+      "path": "renders/v2/revision_04_perfil.png",
+      "bytes": 690269,
+      "sha256": "7982c6dc942fda2b17dac6bb3e3d82eef12cdf332e908246c51a7a3d962f31f7"
+    },
+    {
+      "path": "renders/v2/revision_05_anatomia.png",
+      "bytes": 645640,
+      "sha256": "ea8699236ca3c973aa48d5b0e516fe024b957969e65950053d709225365b6974"
+    },
+    {
+      "path": "renders/v2/revision_06_anatomia.png",
+      "bytes": 645963,
+      "sha256": "058647cf9911ae35aa6094c55efb3760aba4647fd9e07d736cb52dc17c850fce"
+    },
+    {
+      "path": "renders/v2/revision_06_vestido.png",
+      "bytes": 739200,
+      "sha256": "f5a287d40838c5934685b84671088dc423d552e84d24e452021f7ba7cca5030b"
+    },
+    {
+      "path": "renders/v2/revision_espalda.png",
+      "bytes": 710706,
+      "sha256": "60a3c60227462bf01bcea2bd63fca1ab5e6054317019f4606bee225bf080ff0d"
+    },
+    {
+      "path": "renders/v2/revision_flexion.png",
+      "bytes": 742791,
+      "sha256": "e140491d0ac635947f7ceeed9800fba1fddd17e7eafaca518c811a64a821582d"
+    },
+    {
+      "path": "renders/v2/revision_frente.png",
+      "bytes": 747238,
+      "sha256": "1bd5d80d0ef2cc6696beb4d269aaf67daac7100131d34296df69132737d46a97"
+    },
+    {
+      "path": "renders/v2/revision_perfil.png",
+      "bytes": 690009,
+      "sha256": "e44c036c17efd93583769922e0a8e26e5e1e4803ffae88870935925d944edf2e"
+    },
+    {
+      "path": "renders/v2/revision_rostro_perfil.png",
+      "bytes": 496247,
+      "sha256": "092967b8b71ee71f54e7f854e0bdbedd888b6635cad78343ee1811fdb9f2ddf3"
+    },
+    {
+      "path": "renders/v2/rostro_frente.png",
+      "bytes": 1393838,
+      "sha256": "7b598240162f2ebc558d465fe29c09b089d28f2ab970bd79b9e843ad295e6839"
+    },
+    {
+      "path": "renders/v2/rostro_perfil.png",
+      "bytes": 1331612,
+      "sha256": "7b8a4fbbf33f6d1dd36a4be9cf837dd5124bdd7e881038da10a869cd9806bb89"
+    },
+    {
+      "path": "renders/v2/tres_cuartos.png",
+      "bytes": 1785493,
+      "sha256": "e9f6fa78b080bdbe3686f76792e7afc2a51ebf4df07249878e9bb3661f90033a"
+    },
+    {
+      "path": "scripts/blend_viajero_v2_anatomy.py",
+      "bytes": 3468,
+      "sha256": "31a8f1a52f205c65b83c9be37d6f014ff538a17c4129ab02ae57b7b5516a4e88"
+    },
+    {
+      "path": "scripts/blender_mcp_client.py",
+      "bytes": 1342,
+      "sha256": "1b32bb960fe7c9cdcd1962ae6b19294e182bbb008b944641f8cf537a77a0bfa9"
+    },
+    {
+      "path": "scripts/build_viajero_v2.py",
+      "bytes": 2366,
+      "sha256": "2e875c00639e13bf55048fa062becf06ac674b4da3882ee9c46e4999a2234658"
+    },
+    {
+      "path": "scripts/fix_viajero_v2_layers.py",
+      "bytes": 3558,
+      "sha256": "3626395db77e7be13a0c5fcc13f8612f3d41203e8d8e32c9a358d58d6980261c"
+    },
+    {
+      "path": "scripts/package_viajero_v2.py",
+      "bytes": 9471,
+      "sha256": "a8fb49ad2622608f5262d289f0384489aadfff24ca3c36bf2650f07c51c7489f"
+    },
+    {
+      "path": "scripts/refine_viajero_v2.py",
+      "bytes": 2729,
+      "sha256": "cda0e1634573c3da59534502761956216013c029d30485a4f4dcff9ac1569cc4"
+    },
+    {
+      "path": "scripts/relax_viajero_v2_anatomy.py",
+      "bytes": 2487,
+      "sha256": "8b28ff333fe5a6207879aa86de6c5ad1c6d30b2b62a1b6788e04b3c360a80dbe"
+    },
+    {
+      "path": "scripts/render_viajero_v2.py",
+      "bytes": 4458,
+      "sha256": "ffbe326127429fdd41948eaf29bfd0c9498b6771ad8ea9939e39e1ea313c182f"
+    },
+    {
+      "path": "scripts/start_blender_mcp.py",
+      "bytes": 529,
+      "sha256": "443359b64a4b0e5093480a0080b0a221ebd6d3bc5473e24a4e890d66cbe42625"
+    },
+    {
+      "path": "scripts/validate_viajero_v2.py",
+      "bytes": 4120,
+      "sha256": "23c260d2b117fa9b8a9384b0fa80ae8537bdb98666f24c45d74c1f3cab9ac2c7"
+    },
+    {
+      "path": "scripts/viajero_lib.py",
+      "bytes": 7843,
+      "sha256": "3b6a0d7b1d52f7344451baab664edabe7f8bab799d602a5d41159dbf837144fb"
+    },
+    {
+      "path": "scripts/viajero_v2/anatomy.py",
+      "bytes": 7930,
+      "sha256": "58233d0ee09fea4deb8cc2d7084160af76bf5991d8ed8b7f3ebc9b4256fb2d79"
+    },
+    {
+      "path": "scripts/viajero_v2/common.py",
+      "bytes": 4651,
+      "sha256": "f6762a4abc0656350305f65fa9984abd3f8018c4fc79662e2bd46492bbb2f111"
+    },
+    {
+      "path": "scripts/viajero_v2/hair.py",
+      "bytes": 3403,
+      "sha256": "e871627fe36837c1c50ac051831063d80780883dbf0da749997f195b8a32cace"
+    },
+    {
+      "path": "scripts/viajero_v2/scene.py",
+      "bytes": 4611,
+      "sha256": "d6b1c5e897efb369ffde9130d2bb196caede22c3a17134b16ae2f67964731b2a"
+    },
+    {
+      "path": "scripts/viajero_v2/wardrobe.py",
+      "bytes": 6583,
+      "sha256": "e32b210545b1afd2a2c8fed92464a3056a7c4d74c137931e0b0b4d48c35df937"
+    }
+  ]
+}
