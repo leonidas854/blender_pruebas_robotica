@@ -84,7 +84,7 @@ def package():
     pdf=report()
     fixed=['blender/v2/viajero_esculpido.blend','blender/personaje_final.blend',
         'scripts/viajero_lib.py','scripts/build_viajero_v2.py','scripts/render_viajero_v2.py',
-        'scripts/refine_viajero_v2.py','scripts/relax_viajero_v2_anatomy.py','scripts/blend_viajero_v2_anatomy.py','scripts/fix_viajero_v2_layers.py','scripts/validate_viajero_v2.py',
+        'scripts/refine_viajero_v2.py','scripts/relax_viajero_v2_anatomy.py','scripts/blend_viajero_v2_anatomy.py','scripts/restore_viajero_v2_hands.py','scripts/fix_viajero_v2_layers.py','scripts/validate_viajero_v2.py',
         'scripts/start_blender_mcp.py','scripts/blender_mcp_client.py','scripts/package_viajero_v2.py',
         'renders/final/viajero_presentacion.png',str(pdf.relative_to(ROOT))]
     files=[ROOT/p for p in fixed]

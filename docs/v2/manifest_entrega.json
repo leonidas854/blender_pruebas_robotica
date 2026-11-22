@@ -9,8 +9,8 @@
     },
     {
       "path": "blender/v2/viajero_esculpido.blend",
-      "bytes": 142493043,
-      "sha256": "be1daf1427750a93f234015d8857ccfe70c61e315cd2b1a9257dde994169a616"
+      "bytes": 141189171,
+      "sha256": "7411c1500f219b6c164e61c257bd9c6a39bd09fe8e53d402161d120ae4390d27"
     },
     {
       "path": "docs/v2/GUIA_ENTREGA.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "docs/v2/bitacora.md",
-      "bytes": 3321,
-      "sha256": "ad1b0a77782a4918929f97c98e34c74baf6049925a1ec4d469a028fe1572b98f"
+      "bytes": 3568,
+      "sha256": "984ad33c9b606726ca019145e023db8d8655a8d4d371a8279a14ed9bc5d131f3"
     },
     {
       "path": "docs/v2/escena.json",
@@ -45,7 +45,7 @@
     {
       "path": "docs/v2/validacion.json",
       "bytes": 1324,
-      "sha256": "e83f41762f168e9037a105464439e7535bab17a02172feb18e2286a65f31b499"
+      "sha256": "5e0df12a5d0477194bb9e7672c3bad18bf5c84ecce6b6e0e54e2898a194746c3"
     },
     {
       "path": "documentacion/13 Captura_de_Movimiento_y_Gemelos_Digitales.pdf",
@@ -64,8 +64,8 @@
     },
     {
       "path": "entrega/v2/Viajero_v2_Informe_y_Evidencias.pdf",
-      "bytes": 27299184,
-      "sha256": "12d327ad9a8ab7514d7b22cece0490337d325b55308e92831dbbb7d568b04636"
+      "bytes": 27349469,
+      "sha256": "b0da43cd431775459e7329b360ff93886793529e8462d484988311b0e33ea47c"
     },
     {
       "path": "referencias/cuerpo_base/02_cuerpo_base_referencia.png",
@@ -159,23 +159,23 @@
     },
     {
       "path": "renders/v2/anatomia_continua.png",
-      "bytes": 1565775,
-      "sha256": "d250c7862e72f252da5706e37aaf95cbefe68ea4747a4dc650fdba79fe432713"
+      "bytes": 1570806,
+      "sha256": "2e7b405666770d23b39ec0e1f7f3207ee98b0de35b8169e7468d86267090fbe1"
     },
     {
       "path": "renders/v2/anatomia_flexion.png",
-      "bytes": 1569011,
-      "sha256": "7366f2253a62eae136b24e105f871725f220f255ca1e75013910268475fdad00"
+      "bytes": 1572319,
+      "sha256": "eb4ced603c8c99fe7af3895ba543a3a269f3ae5d59a5a17efb61c031d1212ff1"
     },
     {
       "path": "renders/v2/espalda.png",
-      "bytes": 1744600,
-      "sha256": "11bbc66fe430cc93a8f43d2e379e0c50e32e995d8b43f1da1d62203eaa0ff52c"
+      "bytes": 1749088,
+      "sha256": "d3a550be2a4abb4f15ffd2bccd2cda9b4e9dd1a39dff24233939df93de227a83"
     },
     {
       "path": "renders/v2/frente.png",
-      "bytes": 1815028,
-      "sha256": "e08c2066a9616f5b3d43f60aee1234f60b0b2a6723b0a21b1e23d29f61986934"
+      "bytes": 1819844,
+      "sha256": "1284a4918db8f49648d5c153140b27f31218b60228ae9787c4ca4e1e79341802"
     },
     {
       "path": "renders/v2/iteracion_01_cuerpo.png",
@@ -209,18 +209,18 @@
     },
     {
       "path": "renders/v2/perfil.png",
-      "bytes": 1704092,
-      "sha256": "195ca91011e9879f6a6e39261b334f824b437316125fee722f524086ef177e0a"
+      "bytes": 1705060,
+      "sha256": "2321f5548d7450c7d726155f9b5e36a49951fc860e58ac930d48a7ee76ad274b"
     },
     {
       "path": "renders/v2/presentacion.png",
-      "bytes": 3820212,
-      "sha256": "50935b0e938cc3b626405660a79f2e9ec1ff0739b61304816d735282db1e3981"
+      "bytes": 3825232,
+      "sha256": "d2629cd7ada183faf816a3b7429f0a68d4329cf9d5f3185a539aae5ba6231742"
     },
     {
       "path": "renders/v2/prueba_codos_rodilla.png",
-      "bytes": 1786156,
-      "sha256": "c1d4c555461b36f106729c8aa5d69904b6d9f8d62fe3a19ba3e62d389756f9f8"
+      "bytes": 1789131,
+      "sha256": "0d246b46ba542e3028512cf508773ead4c649ef48e11c5f15486fdf25620eed2"
     },
     {
       "path": "renders/v2/revision_04_espalda.png",
@@ -253,6 +253,16 @@
       "sha256": "f5a287d40838c5934685b84671088dc423d552e84d24e452021f7ba7cca5030b"
     },
     {
+      "path": "renders/v2/revision_07_anatomia.png",
+      "bytes": 645813,
+      "sha256": "22360d38d0895ceca55c1f58746f4396865616470ddbd82d79f6bafda1e016de"
+    },
+    {
+      "path": "renders/v2/revision_07_vestido.png",
+      "bytes": 739820,
+      "sha256": "ee56270f2ed3bcd24cbc44eb1f67168c616218f5509c0e985fb89e4f65dfa19b"
+    },
+    {
       "path": "renders/v2/revision_espalda.png",
       "bytes": 710706,
       "sha256": "60a3c60227462bf01bcea2bd63fca1ab5e6054317019f4606bee225bf080ff0d"
@@ -279,18 +289,18 @@
     },
     {
       "path": "renders/v2/rostro_frente.png",
-      "bytes": 1393838,
-      "sha256": "7b598240162f2ebc558d465fe29c09b089d28f2ab970bd79b9e843ad295e6839"
+      "bytes": 1393879,
+      "sha256": "6a222a0c39271472015e7ab1c1f53dcd2ca873c436abe272802ff89ebdb699e5"
     },
     {
       "path": "renders/v2/rostro_perfil.png",
-      "bytes": 1331612,
-      "sha256": "7b8a4fbbf33f6d1dd36a4be9cf837dd5124bdd7e881038da10a869cd9806bb89"
+      "bytes": 1331166,
+      "sha256": "defb8d05ddd2f122269413675b61bc6c56b67282c482e5037af70ca0c1745019"
     },
     {
       "path": "renders/v2/tres_cuartos.png",
-      "bytes": 1785493,
-      "sha256": "e9f6fa78b080bdbe3686f76792e7afc2a51ebf4df07249878e9bb3661f90033a"
+      "bytes": 1788692,
+      "sha256": "0bb5cc234cf9ce14ba4699da00d2b86bbbc1821d5e84dfb796dc3434e0718775"
     },
     {
       "path": "scripts/blend_viajero_v2_anatomy.py",
@@ -304,8 +314,8 @@
     },
     {
       "path": "scripts/build_viajero_v2.py",
-      "bytes": 2366,
-      "sha256": "2e875c00639e13bf55048fa062becf06ac674b4da3882ee9c46e4999a2234658"
+      "bytes": 2463,
+      "sha256": "0334caab0eec759c9b2871090359c94b8835e284982e4e5a2c7619d358b64737"
     },
     {
       "path": "scripts/fix_viajero_v2_layers.py",
@@ -314,8 +324,8 @@
     },
     {
       "path": "scripts/package_viajero_v2.py",
-      "bytes": 9471,
-      "sha256": "a8fb49ad2622608f5262d289f0384489aadfff24ca3c36bf2650f07c51c7489f"
+      "bytes": 9509,
+      "sha256": "5ea6d99378482fd61b8f49b5d09193874582279e5078cdb38b1244e4872b9610"
     },
     {
       "path": "scripts/refine_viajero_v2.py",
@@ -324,13 +334,18 @@
     },
     {
       "path": "scripts/relax_viajero_v2_anatomy.py",
-      "bytes": 2487,
-      "sha256": "8b28ff333fe5a6207879aa86de6c5ad1c6d30b2b62a1b6788e04b3c360a80dbe"
+      "bytes": 2520,
+      "sha256": "1a5d8cdc4191bc90a81f74ff976851a0d11855597ab56df9667715d3de8c4fb1"
     },
     {
       "path": "scripts/render_viajero_v2.py",
       "bytes": 4458,
       "sha256": "ffbe326127429fdd41948eaf29bfd0c9498b6771ad8ea9939e39e1ea313c182f"
+    },
+    {
+      "path": "scripts/restore_viajero_v2_hands.py",
+      "bytes": 3546,
+      "sha256": "0a5bed6922cfea4309d1e45673a578f11613fddd9afa950a806b60113a6e685c"
     },
     {
       "path": "scripts/start_blender_mcp.py",

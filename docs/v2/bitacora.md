@@ -45,3 +45,6 @@ progresivos de dos integrantes ni una grabación de captura que no se realizó.
   las uniones. Se añadieron puentes anatómicos de cadera, hombro y muñeca, se
   fundieron con la superficie y se transfirieron color y deltas faciales por
   proximidad. Los pesos se reconstruyeron después del cambio de topología.
+- La revisión de la portada detectó erosión excesiva de dedos tras la relajación.
+  Se recuperan palma, muñeca y dedos del original preservado, fundiéndolos con
+  la nueva anatomía y reconstruyendo los pesos antes de actualizar la entrega.

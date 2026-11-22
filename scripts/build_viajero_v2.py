@@ -42,7 +42,9 @@ def main():
     from fix_viajero_v2_layers import main as fix_layers
     from relax_viajero_v2_anatomy import main as relax_anatomy
     from blend_viajero_v2_anatomy import main as blend_anatomy
-    normalize_height();test_pose();refine();fix_layers();relax_anatomy();blend_anatomy();relax_anatomy()
+    normalize_height();test_pose();refine();fix_layers();relax_anatomy(iterations=240);blend_anatomy();relax_anatomy()
+    from restore_viajero_v2_hands import main as restore_hands
+    restore_hands()
     print('V2_BUILD_OK',flush=True)
 
 

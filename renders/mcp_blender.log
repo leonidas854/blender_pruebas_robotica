@@ -213,3 +213,18 @@ Client disconnected
 Client handler stopped
 
 Blender quit
+00:04.230  blend            | Read blend: "/home/leonidas/deveploment/blender_pruebas_robotica/blender/v2/viajero_esculpido.blend"
+BlenderMCP addon registered
+VIAJERO_MCP_START_REQUESTED localhost:9876
+00:55.084  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_07_anatomia.png'
+01:02.094  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_07_vestido.png'
+01:54.714  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/frente.png'
+02:11.251  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/perfil.png'
+02:27.531  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/espalda.png'
+02:44.393  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/tres_cuartos.png'
+03:22.248  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/presentacion.png'
+03:34.795  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/rostro_frente.png'
+03:47.289  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/rostro_perfil.png'
+04:02.901  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/prueba_codos_rodilla.png'
+04:17.786  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/anatomia_continua.png'
+04:34.378  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/anatomia_flexion.png'
