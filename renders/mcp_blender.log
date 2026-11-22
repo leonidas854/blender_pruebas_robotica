@@ -91,3 +91,7 @@ Exception: {"exception_type": "RuntimeError", "message": "Error: DeformGroup 'TE
 20:55.685  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_05_anatomia.png'
 23:32.860  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_06_anatomia.png'
 23:40.527  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_06_vestido.png'
+25:25.106  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/frente.png'
+25:41.654  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/perfil.png'
+25:58.318  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/espalda.png'
+26:17.123  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/tres_cuartos.png'
