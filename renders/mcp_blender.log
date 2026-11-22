@@ -1,0 +1,93 @@
+00:04.181  blend            | Read blend: "/home/leonidas/deveploment/blender_pruebas_robotica/blender/personaje_final.blend"
+BlenderMCP addon registered
+VIAJERO_MCP_START_REQUESTED localhost:9876
+00:17.098  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+04:44.356  blend            | Read blend: "/home/leonidas/deveploment/blender_pruebas_robotica/blender/personaje_final.blend"
+Traceback (most recent call last):
+  File "/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py", line 2294, in execute_code
+    exec(code, namespace)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/build_viajero_v2.py", line 42, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/build_viajero_v2.py", line 21, in main
+    body=anatomy.build(rig)
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/viajero_v2/anatomy.py", line 69, in build
+    parts.append(g.sphere('Volumen_oreja',(sign*.089,.008,1.655),(.013,.019,.030),mat))
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/viajero_lib.py", line 125, in sphere
+    o=register(bpy.context.object,name,mat,bone)
+               ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Context' object has no attribute 'object'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py", line 1623, in _execute_command_internal
+    result = handler(**params)
+  File "/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py", line 2304, in execute_code
+    raise Exception(
+    ...<5 lines>...
+    )
+Exception: {"exception_type": "AttributeError", "message": "'Context' object has no attribute 'object'", "traceback": "Traceback (most recent call last):\n  File \"/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py\", line 2294, in execute_code\n    exec(code, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 1, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/build_viajero_v2.py\", line 42, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/build_viajero_v2.py\", line 21, in main\n    body=anatomy.build(rig)\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/viajero_v2/anatomy.py\", line 69, in build\n    parts.append(g.sphere('Volumen_oreja',(sign*.089,.008,1.655),(.013,.019,.030),mat))\n                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/viajero_lib.py\", line 125, in sphere\n    o=register(bpy.context.object,name,mat,bone)\n               ^^^^^^^^^^^^^^^^^^\nAttributeError: 'Context' object has no attribute 'object'\n"}
+05:04.015  blend            | Read blend: "/home/leonidas/deveploment/blender_pruebas_robotica/blender/personaje_final.blend"
+06:38.971  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/iteracion_01_cuerpo.png'
+06:44.801  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/iteracion_01_rostro.png'
+08:26.804  blend            | Read blend: "/home/leonidas/deveploment/blender_pruebas_robotica/blender/personaje_final.blend"
+10:43.729  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/iteracion_02_cuerpo.png'
+10:49.497  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/iteracion_02_rostro.png'
+11:11.881  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_frente.png'
+11:19.621  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_perfil.png'
+11:27.324  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_espalda.png'
+11:35.232  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_flexion.png'
+11:41.079  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_rostro_perfil.png'
+12:24.897  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/iteracion_03_rostro.png'
+12:32.208  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/iteracion_03_cuerpo.png'
+13:52.926  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_04_espalda.png'
+14:00.583  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_04_flexion.png'
+14:08.599  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_04_perfil.png'
+15:49.462  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/frente.png'
+16:05.775  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/perfil.png'
+16:21.547  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/espalda.png'
+16:37.630  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/tres_cuartos.png'
+17:18.569  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/presentacion.png'
+17:31.655  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/rostro_frente.png'
+17:44.615  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/rostro_perfil.png'
+18:01.109  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/prueba_codos_rodilla.png'
+18:16.096  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/anatomia_continua.png'
+18:31.635  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/anatomia_flexion.png'
+Traceback (most recent call last):
+  File "/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py", line 2294, in execute_code
+    exec(code, namespace)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py", line 33, in main
+    body.vertex_groups.remove(group)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+RuntimeError: Error: DeformGroup 'TEMP_Relajacion' not in object 'Anatomia_Esculpida'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py", line 1623, in _execute_command_internal
+    result = handler(**params)
+  File "/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py", line 2304, in execute_code
+    raise Exception(
+    ...<5 lines>...
+    )
+Exception: {"exception_type": "RuntimeError", "message": "Error: DeformGroup 'TEMP_Relajacion' not in object 'Anatomia_Esculpida'\n", "traceback": "Traceback (most recent call last):\n  File \"/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py\", line 2294, in execute_code\n    exec(code, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 1, in <module>\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py\", line 46, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py\", line 33, in main\n    body.vertex_groups.remove(group)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\nRuntimeError: Error: DeformGroup 'TEMP_Relajacion' not in object 'Anatomia_Esculpida'\n\n"}
+20:04.528  blend            | Read blend: "/home/leonidas/deveploment/blender_pruebas_robotica/blender/v2/antes_relajacion.blend"
+20:55.685  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_05_anatomia.png'
+23:32.860  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_06_anatomia.png'
+23:40.527  render           | Saved: '/home/leonidas/deveploment/blender_pruebas_robotica/renders/v2/revision_06_vestido.png'

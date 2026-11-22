@@ -1,3 +1,17 @@
+# Revisión actual — 22 de noviembre de 2026
+
+Nueva entrega artística en `blender/v2/viajero_esculpido.blend`. Se reconstruye
+anatomía continua, rostro y cabello, se revisan prendas y se mantiene el rig FK.
+Alcance confirmado por el usuario: **personaje, rig y renders**, sin mocap todavía.
+Guía y criterios: [docs/v2/GUIA_ENTREGA.md](docs/v2/GUIA_ENTREGA.md).
+Resultados medidos: `docs/v2/validacion.json`. Imágenes: `renders/v2/`.
+El parecido sigue siendo una interpretación estilizada que requiere revisión artística;
+no se declara fotogrametría ni retopología facial de producción.
+
+La v1 descrita abajo permanece conservada, incluyendo sus originales 01–03.
+
+---
+
 # Estado del proyecto — 20 de octubre de 2026
 
 **Entrega ensamblada v1:** personaje vestido y editable, materiales, accesorios, rig FK y renders. No se certifica como personaje final de producción: el parecido facial y las deformaciones exigentes requieren refinamiento.

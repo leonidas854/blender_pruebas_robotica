@@ -1,0 +1,58 @@
+{
+  "blender": "5.2.4 LTS",
+  "height_m": 1.7938774796202779,
+  "meshes": 376,
+  "vertices_total": 1573076,
+  "bones": 57,
+  "anatomy": {
+    "vertices": 720950,
+    "faces": 720948,
+    "components": 3,
+    "component_sizes": [
+      720934,
+      8,
+      8
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "pants": {
+    "vertices": 193718,
+    "faces": 193716,
+    "components": 1,
+    "component_sizes": [
+      193718
+    ],
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "poses": {
+    "01_A_pose": {
+      "finite_vertices": true,
+      "vertices": 720950
+    },
+    "02_T_pose": {
+      "finite_vertices": true,
+      "vertices": 720950
+    },
+    "05_Codos_flexionados": {
+      "finite_vertices": true,
+      "vertices": 720950
+    },
+    "06_Paso_caminata": {
+      "finite_vertices": true,
+      "vertices": 720950
+    },
+    "13_Presentacion": {
+      "finite_vertices": true,
+      "vertices": 720950
+    }
+  },
+  "errors": [
+    "Anatomia desconectada"
+  ],
+  "warnings": [],
+  "status": "FAIL",
+  "limits": "No certifica parecido fotografico, retopologia de produccion ni ausencia de colisiones en todas las poses. UV automaticas; sin mapas PBR horneados.",
+  "render_devices": "[('NVIDIA GeForce RTX 4070 Laptop GPU', 'OPTIX')]"
+}

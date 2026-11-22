@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/blender_mcp_client.py", line 34, in <module>
+    print(json.dumps(execute(code), ensure_ascii=False, indent=2))
+                     ~~~~~~~^^^^^^
+  File "/home/leonidas/deveploment/blender_pruebas_robotica/scripts/blender_mcp_client.py", line 23, in execute
+    raise RuntimeError(result)
+RuntimeError: {'status': 'error', 'message': '{"exception_type": "RuntimeError", "message": "Error: DeformGroup \'TEMP_Relajacion\' not in object \'Anatomia_Esculpida\'\\n", "traceback": "Traceback (most recent call last):\\n  File \\"/home/leonidas/.config/blender/5.2/scripts/addons/blender_mcp.py\\", line 2294, in execute_code\\n    exec(code, namespace)\\n    ~~~~^^^^^^^^^^^^^^^^^\\n  File \\"<string>\\", line 1, in <module>\\n  File \\"<frozen runpy>\\", line 287, in run_path\\n  File \\"<frozen runpy>\\", line 98, in _run_module_code\\n  File \\"<frozen runpy>\\", line 88, in _run_code\\n  File \\"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py\\", line 46, in <module>\\n    if __name__==\'__main__\':main()\\n                            ~~~~^^\\n  File \\"/home/leonidas/deveploment/blender_pruebas_robotica/scripts/relax_viajero_v2_anatomy.py\\", line 33, in main\\n    body.vertex_groups.remove(group)\\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^\\nRuntimeError: Error: DeformGroup \'TEMP_Relajacion\' not in object \'Anatomia_Esculpida\'\\n\\n"}'}

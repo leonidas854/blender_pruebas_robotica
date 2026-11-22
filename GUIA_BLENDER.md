@@ -1,3 +1,7 @@
+> **Nueva revisión, 22/11/2026:** abrir `blender/v2/viajero_esculpido.blend` con
+> `/opt/blender-lts/blender` (5.2.4). Guía de escultura, rig, renders y alcance en
+> [docs/v2/GUIA_ENTREGA.md](docs/v2/GUIA_ENTREGA.md). Lo siguiente documenta la v1 conservada.
+
 # Trabajar con el Viajero entre Épocas
 
 ## Abrir

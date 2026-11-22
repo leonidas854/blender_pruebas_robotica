@@ -1,0 +1,2 @@
+blender/v2/antes_relajacion.blend filter=lfs diff=lfs merge=lfs -text
+blender/v2/viajero_esculpido.blend filter=lfs diff=lfs merge=lfs -text
