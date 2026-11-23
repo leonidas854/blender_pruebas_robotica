@@ -1,0 +1,10 @@
+{
+  "source_blend": "C:\\Users\\foonky\\OneDrive\\Documentos\\blender_pruebas_robotica\\blender\\mocap\\robot_humanoide_retargeting.blend",
+  "action": "B_Retarget_source_SYNTHETIC_NOT_FREEMOCAP",
+  "provenance": "synthetic_fixture_NOT_FreeMoCap",
+  "frames": 180,
+  "fps": 30.00030041041785,
+  "units": "radians",
+  "definition": "Geometric angles from evaluated joint positions. No arbitrary local Euler components.",
+  "hardware_limits": "Not certified; no URDF supplied"
+}

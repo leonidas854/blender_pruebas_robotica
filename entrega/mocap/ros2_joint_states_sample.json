@@ -1,0 +1,27 @@
+{
+  "header": {
+    "stamp": {
+      "sec": 1795390129,
+      "nanosec": 214000000
+    },
+    "frame_id": "base_link"
+  },
+  "name": [
+    "left_shoulder_pitch",
+    "left_shoulder_roll",
+    "left_elbow_flex",
+    "right_shoulder_pitch",
+    "right_shoulder_roll",
+    "right_elbow_flex"
+  ],
+  "position": [
+    -0.0,
+    0.5553665949442292,
+    0.2517750341420326,
+    -0.0,
+    -0.30103303236966944,
+    0.11613020925306872
+  ],
+  "velocity": [],
+  "effort": []
+}

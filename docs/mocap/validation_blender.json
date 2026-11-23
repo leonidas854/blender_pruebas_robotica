@@ -1,0 +1,36 @@
+{
+  "blender": "5.2.2 LTS",
+  "source": "synthetic_fixture",
+  "frames": 180,
+  "max_direction_error_deg": 6.353016845507527e-05,
+  "max_bone_length_drift_m": 1.4901161193847656e-07,
+  "mean_apply_and_keyframe_ms": 1.356082777753424,
+  "max_apply_and_keyframe_ms": 3.3966000000873464,
+  "timing_scope": "Python adapter and keyframe insertion; excludes depsgraph and camera/inference",
+  "body": {
+    "vertices": 227722,
+    "faces": 227724,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0
+  },
+  "weights_invalid": {},
+  "pose_finite_checks": {
+    "1": true,
+    "45": true,
+    "90": true,
+    "135": true,
+    "180": true
+  },
+  "base_mesh_triangles": 1097092,
+  "bones": 57,
+  "errors": [],
+  "pending": [
+    "live personal capture",
+    "real FreeMoCap source",
+    "ROS 2 runtime publication",
+    "visual collision approval",
+    "student Git history"
+  ]
+}

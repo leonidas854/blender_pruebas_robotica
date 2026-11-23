@@ -1,0 +1,10 @@
+{
+  "source_blend": "C:\\Users\\foonky\\OneDrive\\Documentos\\blender_pruebas_robotica\\blender\\mocap\\robot_humanoide_mocap.blend",
+  "action": "A_SYNTHETIC_TEST_NO_HUMAN_CAPTURE",
+  "provenance": "synthetic_fixture; analytical coordinates; NOT human or FreeMoCap capture",
+  "frames": 180,
+  "fps": 30.0,
+  "units": "radians",
+  "definition": "Geometric angles from evaluated joint positions. No arbitrary local Euler components.",
+  "hardware_limits": "Not certified; no URDF supplied"
+}

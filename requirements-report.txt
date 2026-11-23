@@ -1,0 +1,2 @@
+reportlab>=4.2
+pymupdf>=1.25

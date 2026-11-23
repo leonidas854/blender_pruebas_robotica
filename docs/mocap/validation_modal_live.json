@@ -1,0 +1,13 @@
+{
+  "sent": 43,
+  "applied": 0,
+  "live_window_TIMER": true,
+  "stale_detected": false,
+  "max_tick_ms": 0.0,
+  "socket_released": true,
+  "errors": [
+    "Menos de 5 eventos aplicados",
+    "Sin estado RECIBIENDO",
+    "No detect\u00f3 timeout"
+  ]
+}
