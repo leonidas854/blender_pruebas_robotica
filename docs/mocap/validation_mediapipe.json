@@ -1,0 +1,17 @@
+{
+  "mediapipe": "0.10.32",
+  "opencv": "4.11.0",
+  "input": "existing personal photo; repeated static frames, NOT motion capture",
+  "world_landmarks": 33,
+  "frames": 3,
+  "inference_ms": [
+    383.5455999978876,
+    80.2265999991505,
+    108.04050000297138
+  ],
+  "left_shoulder_x": 0.18039298057556152,
+  "right_shoulder_x": -0.17032617330551147,
+  "visible_landmarks": 33,
+  "model_sha256": "5134a3aad27a58b93da0088d431f366da362b44e3ccfbe3462b3827a839011b1",
+  "errors": []
+}

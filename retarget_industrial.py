@@ -4,7 +4,7 @@ import json
 import sys
 from pathlib import Path
 import bpy
-from mathutils import Quaternion
+from mathutils import Quaternion,Matrix
 
 def retarget(source,target,mapping,start,end,calibration_frame=1,root_motion=False):
     """El frame de calibración debe representar la A-pose física del destino.
@@ -19,6 +19,21 @@ def retarget(source,target,mapping,start,end,calibration_frame=1,root_motion=Fal
     src_world=source.matrix_world.to_quaternion();dst_world=target.matrix_world.to_quaternion()
     base={n:src_world@source.pose.bones[n].matrix.to_quaternion() for n in mapping.values()}
     rest={b.name:b.matrix_local.to_quaternion() for b in target.data.bones}
+    # Alinear también el marco corporal de calibración, no sólo los rolls.
+    # El importador BVH puede girar 180 grados el conjunto al convertir forward.
+    def body_frame(obj,names,posed):
+        bones=obj.pose.bones if posed else obj.data.bones
+        def head(n):
+            b=bones[names[n]]
+            return obj.matrix_world@(b.head if posed else b.head_local)
+        l,r,hl,hr=[head(n) for n in ('upper_arm.L','upper_arm.R','thigh.L','thigh.R')]
+        left=(l-r).normalized();up_hint=(l+r-hl-hr)*.5
+        back=up_hint.cross(left).normalized();up=left.cross(back).normalized()
+        if min(left.length,back.length,up.length)<.9:raise ValueError('Marco corporal degenerado')
+        return Matrix((left,back,up)).transposed().to_quaternion()
+    required=('upper_arm.L','upper_arm.R','thigh.L','thigh.R')
+    if not all(n in mapping for n in required):raise ValueError('Mapa debe incluir hombros y muslos para calibrar marco corporal')
+    align=body_frame(target,{n:n for n in required},False)@body_frame(source,mapping,True).inverted()
     target.animation_data_create();target.animation_data.action=bpy.data.actions.new('B_Retarget_'+source.name)
     ordered=sorted(target.pose.bones,key=lambda b:len(b.parent_recursive))
     root_name=mapping.get('pelvis');origin=source.matrix_world@source.pose.bones[root_name].head if root_name else None
@@ -33,7 +48,7 @@ def retarget(source,target,mapping,start,end,calibration_frame=1,root_motion=Fal
         s.frame_set(frame);bpy.context.view_layer.update();desired={};current={}
         for dst,src in mapping.items():
             q=src_world@source.pose.bones[src].matrix.to_quaternion()
-            delta=q@base[src].inverted()
+            delta=align@(q@base[src].inverted())@align.inverted()
             desired[dst]=dst_world.inverted()@delta@dst_world@rest[dst]
         for pb in ordered:
             basis=current[pb.parent.name]@rest[pb.parent.name].inverted()@rest[pb.name] if pb.parent else rest[pb.name]
@@ -44,7 +59,7 @@ def retarget(source,target,mapping,start,end,calibration_frame=1,root_motion=Fal
             current[pb.name]=basis@q
             pb.keyframe_insert('rotation_quaternion',frame=frame,group=pb.name)
         if root_motion:
-            displacement=(source.matrix_world@source.pose.bones[root_name].head-origin)*ratio
+            displacement=align@(source.matrix_world@source.pose.bones[root_name].head-origin)*ratio
             root=target.pose.bones['root']
             root.location=target.data.bones['root'].matrix_local.to_3x3().inverted()@(target.matrix_world.to_3x3().inverted()@displacement)
             root.keyframe_insert('location',frame=frame)
@@ -62,7 +77,7 @@ def main():
     p.add_argument('--source',type=Path,required=True);p.add_argument('--map',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True);p.add_argument('--rig',default='RIG_Viajero')
     p.add_argument('--scale',type=float,default=1.);p.add_argument('--calibration-frame',type=int,required=True)
-    p.add_argument('--axis-forward',default='-Y');p.add_argument('--axis-up',default='Z')
+    p.add_argument('--axis-forward',default='Y');p.add_argument('--axis-up',default='Z')
     p.add_argument('--root-motion',action='store_true');p.add_argument('--provenance',required=True)
     a=p.parse_args(sys.argv[sys.argv.index('--')+1:]);before=set(bpy.data.objects)
     if a.source.suffix.lower()=='.bvh':

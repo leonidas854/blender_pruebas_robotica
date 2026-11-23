@@ -1,0 +1,13 @@
+{
+  "events": "SIMULATED_TIMER",
+  "UDP": "real_localhost",
+  "sent": 12,
+  "applied": 12,
+  "pose_changed": true,
+  "stale_detected": true,
+  "socket_released": true,
+  "timer_removed": true,
+  "pass_through": true,
+  "errors": [],
+  "visual_GUI_test": "See validation_modal_live.json; personal visual demonstration still pending"
+}

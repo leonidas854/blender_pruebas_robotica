@@ -1,0 +1,18 @@
+{
+  "frames": 180,
+  "max_difference_rad_vs_A_excluding_calibration": {
+    "left_shoulder_pitch_rad": 3.9800084676463527e-07,
+    "left_shoulder_roll_rad": 5.29399225124294e-07,
+    "left_elbow_flex_rad": 8.014484029761348e-07,
+    "right_shoulder_pitch_rad": 2.6918131805957034e-07,
+    "right_shoulder_roll_rad": 5.406564326237984e-07,
+    "right_elbow_flex_rad": 9.98633290505424e-07,
+    "left_shoulder_elevation_rad": 5.293992252353164e-07,
+    "right_shoulder_elevation_rad": 5.406564322907315e-07,
+    "left_knee_flex_rad": 2.3948395051764937e-07,
+    "right_knee_flex_rad": 6.631527511846702e-08
+  },
+  "all_finite": true,
+  "provenance": "synthetic fixture; B frame 1 is rest calibration",
+  "pass": true
+}

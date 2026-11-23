@@ -1,0 +1,14 @@
+{
+  "before_triangles": 1097092,
+  "after_triangles": 367432,
+  "body": {
+    "vertices": 45542,
+    "faces": 76822,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0
+  },
+  "changes": "Decimaci\u00f3n aplicada antes de Armature; Subsurf desactivado; shape keys s\u00f3lo conservadas en versi\u00f3n detallada",
+  "errors": []
+}

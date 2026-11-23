@@ -31,7 +31,7 @@ class MOCAP_OT_start(bpy.types.Operator):
         timer=context.window_manager.event_timer_add(1/30,window=context.window)
         MOCAP_OT_start._generation+=1;self._token=MOCAP_OT_start._generation
         MOCAP_OT_start._active=SimpleNamespace(receiver=receiver,retarget=retarget,timer=timer,
-            previous_action=previous_action,last_ms=0.,last_count=0,token=self._token)
+            previous_action=previous_action,last_ms=0.,last_count=0,token=self._token,events=0,timer_events=0,last_tick=0.)
         context.window_manager.modal_handler_add(self)
         context.scene.mocap_status='Esperando UDP'
         return {'RUNNING_MODAL'}
@@ -39,8 +39,15 @@ class MOCAP_OT_start(bpy.types.Operator):
     def modal(self,context,event):
         run=MOCAP_OT_start._active
         if run is None or run.token!=self._token:return {'CANCELLED'}
+        run.events+=1
         if event.type=='ESC':self.cancel(context);return {'CANCELLED'}
-        if event.type!='TIMER' or event.timer!=run.timer:return {'PASS_THROUGH'}
+        if event.type!='TIMER':return {'PASS_THROUGH'}
+        run.timer_events+=1
+        # Blender 5.2 Event no expone event.timer. Limitar frecuencia si otros
+        # operadores también generan TIMER, sin depender de una API inexistente.
+        now=time.monotonic()
+        if now-run.last_tick<1/35:return {'PASS_THROUGH'}
+        run.last_tick=now
         start=time.perf_counter()
         try:
             packet=run.receiver.poll()

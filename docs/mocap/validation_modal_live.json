@@ -1,13 +1,12 @@
 {
-  "sent": 43,
-  "applied": 0,
+  "sent": 50,
+  "applied": 50,
   "live_window_TIMER": true,
-  "stale_detected": false,
-  "max_tick_ms": 0.0,
+  "stale_detected": true,
+  "max_tick_ms": 2.6127999990421813,
   "socket_released": true,
-  "errors": [
-    "Menos de 5 eventos aplicados",
-    "Sin estado RECIBIENDO",
-    "No detect\u00f3 timeout"
-  ]
+  "errors": [],
+  "armature_only": false,
+  "events": 108,
+  "timer_events": 107
 }
